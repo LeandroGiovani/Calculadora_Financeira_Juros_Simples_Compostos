@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import CalculatorForm from "../components/CalculatorForm";
 
 const tabs = [
@@ -14,6 +15,26 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-gray-100 py-8 px-4">
       <div className="mx-auto max-w-lg">
+        <div className="flex justify-end">
+          <Link
+            to="/juros-compostos"
+            className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-900 mb-4"
+          >
+            Juros Compostos
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-4 w-4 rotate-180"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fillRule="evenodd"
+                d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </Link>
+        </div>
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
             Calculadora Financeira
@@ -26,11 +47,10 @@ export default function Index() {
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`rounded-lg px-2 py-2.5 text-sm font-medium transition-all ${
-                activeTab === tab.id
-                  ? "bg-white text-gray-900 shadow-sm"
-                  : "text-gray-600 hover:text-gray-900"
-              }`}
+              className={`rounded-lg px-2 py-2.5 text-sm font-medium transition-all ${activeTab === tab.id
+                ? "bg-white text-gray-900 shadow-sm"
+                : "text-gray-600 hover:text-gray-900"
+                }`}
             >
               {tab.label}
             </button>
