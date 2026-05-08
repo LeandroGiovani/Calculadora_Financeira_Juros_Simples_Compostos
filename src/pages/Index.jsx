@@ -15,7 +15,7 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-gray-100 py-8 px-4">
       <div className="mx-auto max-w-lg">
-        <div className="flex justify-end">
+        <div className="flex justify-end gap-4">
           <Link
             to="/juros-compostos"
             className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-900 mb-4"

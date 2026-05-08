@@ -17,24 +17,45 @@ export default function JurosCompostos() {
     <div className="min-h-screen bg-gray-100 py-8 px-4">
       <div className="mx-auto max-w-lg">
         <div className="mb-8">
-          <Link
-            to="/"
-            className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-900 mb-4"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4"
-              viewBox="0 0 20 20"
-              fill="currentColor"
+          <div className="mb-4 flex items-center justify-between gap-3">
+            <Link
+              to="/"
+              className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-900"
             >
-              <path
-                fillRule="evenodd"
-                d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-                clipRule="evenodd"
-              />
-            </svg>
-            Juros Simples
-          </Link>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              Juros Simples
+            </Link>
+
+            <Link
+              to="/series-descontos"
+              className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-900"
+            >
+              Séries e Descontos
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4 rotate-180"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </Link>
+          </div>
 
           <div className="text-center">
             <h1 className="text-3xl font-bold text-gray-900 mb-2">

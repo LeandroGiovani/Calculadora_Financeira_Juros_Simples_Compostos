@@ -47,9 +47,9 @@ Abra o navegador em http://localhost:5173 (ou porta indicada pelo Vite).
 ## Estrutura do projeto
 
 - `src/` — código-fonte
-  - `components/CalculatorForm.jsx` — formulário e lógica de cálculo
-  - `pages/Index.jsx` — página inicial
-  - `App.jsx`, `main.jsx` — bootstrap da aplicação
+- `components/CalculatorForm.jsx` — formulário e lógica de cálculo
+- `pages/Index.jsx` — página inicial
+- `App.jsx`, `main.jsx` — bootstrap da aplicação
 
 ## Responsáveis
 
